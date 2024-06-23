@@ -17,7 +17,7 @@ function Register() {
     e.preventDefault();
 
     // send data to backend
-    const response = await axios.post("http://localhost:8000/user/create", {
+    const response = await axios.post("https://form-production-2dc3.up.railway.app/user/create", {
       name: name,
       email: email,
       contact: contact,
