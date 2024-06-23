@@ -8,7 +8,7 @@ function Dashboard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/user").then((res) => {
+    axios.get("https://form-production-2dc3.up.railway.app/user").then((res) => {
       setData(res.data);
     });
   }, []);
